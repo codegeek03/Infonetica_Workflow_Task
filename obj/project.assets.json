@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\shami\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\infonetica\\WorkflowEngine\\WorkflowEngine.csproj",
+      "projectUniqueName": "C:\\Users\\shami\\OneDrive\\Documents\\GitHub\\CDC-2025\\Infonetica\\Infonetica_Workflow_Task\\WorkflowEngine.csproj",
       "projectName": "WorkflowEngine",
-      "projectPath": "F:\\infonetica\\WorkflowEngine\\WorkflowEngine.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "F:\\infonetica\\WorkflowEngine\\obj\\",
+      "projectPath": "C:\\Users\\shami\\OneDrive\\Documents\\GitHub\\CDC-2025\\Infonetica\\Infonetica_Workflow_Task\\WorkflowEngine.csproj",
+      "packagesPath": "C:\\Users\\shami\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shami\\OneDrive\\Documents\\GitHub\\CDC-2025\\Infonetica\\Infonetica_Workflow_Task\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\shami\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

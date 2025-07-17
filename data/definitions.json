@@ -34,5 +34,370 @@
       }
     ],
     "createdAt": "2025-07-17T18:02:30.6173303Z"
+  },
+  {
+    "id": "260aa8e5-a999-4675-89a8-be494c29aaf2",
+    "name": "Order Processing",
+    "description": "Workflow for handling an e-commerce order",
+    "states": [
+      {
+        "id": "placed",
+        "name": "Order Placed",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "shipped",
+        "name": "Shipped",
+        "isInitial": false,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "delivered",
+        "name": "Delivered",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "cancelled",
+        "name": "Cancelled",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "ship",
+        "name": "Ship Order",
+        "enabled": true,
+        "fromStates": [
+          "placed"
+        ],
+        "toState": "shipped",
+        "description": null
+      },
+      {
+        "id": "deliver",
+        "name": "Deliver Order",
+        "enabled": true,
+        "fromStates": [
+          "shipped"
+        ],
+        "toState": "delivered",
+        "description": null
+      },
+      {
+        "id": "cancel",
+        "name": "Cancel Order",
+        "enabled": true,
+        "fromStates": [
+          "placed",
+          "shipped"
+        ],
+        "toState": "cancelled",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T21:24:18.316168Z"
+  },
+  {
+    "id": "3aef95e5-e4d4-4c09-8341-0193ce108720",
+    "name": "Order Processing",
+    "description": "Workflow for handling an e-commerce order",
+    "states": [
+      {
+        "id": "placed",
+        "name": "Order Placed",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "shipped",
+        "name": "Shipped",
+        "isInitial": false,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "delivered",
+        "name": "Delivered",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "cancelled",
+        "name": "Cancelled",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "ship",
+        "name": "Ship Order",
+        "enabled": true,
+        "fromStates": [
+          "placed"
+        ],
+        "toState": "shipped",
+        "description": null
+      },
+      {
+        "id": "deliver",
+        "name": "Deliver Order",
+        "enabled": true,
+        "fromStates": [
+          "shipped"
+        ],
+        "toState": "delivered",
+        "description": null
+      },
+      {
+        "id": "cancel",
+        "name": "Cancel Order",
+        "enabled": true,
+        "fromStates": [
+          "placed",
+          "shipped"
+        ],
+        "toState": "cancelled",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T21:24:58.0149806Z"
+  },
+  {
+    "id": "ca5ba59a-ed25-4d65-b5d4-28ac9fb305be",
+    "name": "Order Processing",
+    "description": "Workflow for handling an e-commerce order",
+    "states": [
+      {
+        "id": "placed",
+        "name": "Order Placed",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "shipped",
+        "name": "Shipped",
+        "isInitial": false,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "delivered",
+        "name": "Delivered",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "cancelled",
+        "name": "Cancelled",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "ship",
+        "name": "Ship Order",
+        "enabled": true,
+        "fromStates": [
+          "placed"
+        ],
+        "toState": "shipped",
+        "description": null
+      },
+      {
+        "id": "deliver",
+        "name": "Deliver Order",
+        "enabled": true,
+        "fromStates": [
+          "shipped"
+        ],
+        "toState": "delivered",
+        "description": null
+      },
+      {
+        "id": "cancel",
+        "name": "Cancel Order",
+        "enabled": true,
+        "fromStates": [
+          "placed",
+          "shipped"
+        ],
+        "toState": "cancelled",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T21:25:44.2393067Z"
+  },
+  {
+    "id": "fc47973c-e430-4507-bcd4-06dc17e69550",
+    "name": "Order Processing",
+    "description": "Workflow for handling an e-commerce order",
+    "states": [
+      {
+        "id": "placed",
+        "name": "Order Placed",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "shipped",
+        "name": "Shipped",
+        "isInitial": false,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "delivered",
+        "name": "Delivered",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "cancelled",
+        "name": "Cancelled",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "ship",
+        "name": "Ship Order",
+        "enabled": true,
+        "fromStates": [
+          "placed"
+        ],
+        "toState": "shipped",
+        "description": null
+      },
+      {
+        "id": "deliver",
+        "name": "Deliver Order",
+        "enabled": true,
+        "fromStates": [
+          "shipped"
+        ],
+        "toState": "delivered",
+        "description": null
+      },
+      {
+        "id": "cancel",
+        "name": "Cancel Order",
+        "enabled": true,
+        "fromStates": [
+          "placed",
+          "shipped"
+        ],
+        "toState": "cancelled",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T21:26:36.6049316Z"
+  },
+  {
+    "id": "fff91a05-9bb3-4967-8895-8a562a978e0e",
+    "name": "Order Processing",
+    "description": "Workflow for handling an e-commerce order",
+    "states": [
+      {
+        "id": "placed",
+        "name": "Order Placed",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "shipped",
+        "name": "Shipped",
+        "isInitial": false,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "delivered",
+        "name": "Delivered",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "cancelled",
+        "name": "Cancelled",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "ship",
+        "name": "Ship Order",
+        "enabled": true,
+        "fromStates": [
+          "placed"
+        ],
+        "toState": "shipped",
+        "description": null
+      },
+      {
+        "id": "deliver",
+        "name": "Deliver Order",
+        "enabled": true,
+        "fromStates": [
+          "shipped"
+        ],
+        "toState": "delivered",
+        "description": null
+      },
+      {
+        "id": "cancel",
+        "name": "Cancel Order",
+        "enabled": true,
+        "fromStates": [
+          "placed",
+          "shipped"
+        ],
+        "toState": "cancelled",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T21:30:34.2099848Z"
   }
 ]

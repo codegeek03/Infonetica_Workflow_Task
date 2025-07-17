@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1aa10a49-37f6-45a2-89ea-4162161b2422",
+    "definitionId": "f69e77e3-1b58-4e95-9d96-859fa00fb4b0",
+    "currentStateId": "end",
+    "history": [
+      {
+        "actionId": "finish",
+        "actionName": "Finish",
+        "fromStateId": "start",
+        "toStateId": "end",
+        "timestamp": "2025-07-17T18:04:21.0663538Z"
+      }
+    ],
+    "createdAt": "2025-07-17T18:03:28.8873308Z",
+    "lastUpdated": "2025-07-17T18:04:21.0664153Z"
+  },
+  {
+    "id": "1051af65-9ea5-4664-83f2-e19cd62d966e",
+    "definitionId": "f69e77e3-1b58-4e95-9d96-859fa00fb4b0",
+    "currentStateId": "start",
+    "history": [],
+    "createdAt": "2025-07-17T21:13:58.7092709Z",
+    "lastUpdated": "2025-07-17T21:13:58.709271Z"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f69e77e3-1b58-4e95-9d96-859fa00fb4b0",
+    "name": "Simple Test",
+    "description": null,
+    "states": [
+      {
+        "id": "start",
+        "name": "Start",
+        "isInitial": true,
+        "isFinal": false,
+        "enabled": true,
+        "description": null
+      },
+      {
+        "id": "end",
+        "name": "End",
+        "isInitial": false,
+        "isFinal": true,
+        "enabled": true,
+        "description": null
+      }
+    ],
+    "actions": [
+      {
+        "id": "finish",
+        "name": "Finish",
+        "enabled": true,
+        "fromStates": [
+          "start"
+        ],
+        "toState": "end",
+        "description": null
+      }
+    ],
+    "createdAt": "2025-07-17T18:02:30.6173303Z"
+  }
+]
