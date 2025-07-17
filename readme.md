@@ -79,6 +79,80 @@ WorkflowEngine/
 └── .dockerignore             # 📦 Build optimization
 ```
 
+## 🎯 Workflow State Machine
+
+Here's how our Document Review workflow operates as a state machine:
+
+```mermaid
+graph TD
+    A[📝 Draft] -->|📤 Submit for Review| B[👀 Under Review]
+    B -->|👍 Approve Document| C[✅ Approved]
+    B -->|👎 Reject Document| D[❌ Rejected]
+    B -->|✏️ Send Back for Revision| A
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#e8f5e8
+    style D fill:#ffebee
+    
+    classDef initial stroke:#4caf50,stroke-width:3px
+    classDef final stroke:#9c27b0,stroke-width:3px
+    
+    class A initial
+    class C,D final
+```
+
+## 🔄 System Architecture Flow
+
+```mermaid
+graph TB
+    subgraph "Client Layer"
+        FE[🎨 Frontend Dashboard]
+        API_Client[📱 API Client]
+        CURL[💻 cURL/Postman]
+    end
+    
+    subgraph "API Layer"
+        Controller[🚪 Minimal API Endpoints]
+    end
+    
+    subgraph "Business Layer"
+        WS[🧠 Workflow Service]
+        Validator[🛡️ Validation Engine]
+    end
+    
+    subgraph "Data Layer"
+        Memory[💾 In-Memory Storage]
+        Models[📊 Domain Models]
+    end
+    
+    subgraph "Core Concepts"
+        WD[📋 Workflow Definition]
+        WI[🏃 Workflow Instance]
+        States[🏛️ States]
+        Actions[⚡ Actions]
+    end
+    
+    FE --> Controller
+    API_Client --> Controller
+    CURL --> Controller
+    
+    Controller --> WS
+    WS --> Validator
+    WS --> Memory
+    
+    Memory --> Models
+    Models --> WD
+    Models --> WI
+    Models --> States
+    Models --> Actions
+    
+    style FE fill:#e3f2fd
+    style Controller fill:#f3e5f5
+    style WS fill:#e8f5e8
+    style Memory fill:#fff3e0
+```
+
 ## 📚 API Reference
 
 ### 🏗️ Workflow Definitions
