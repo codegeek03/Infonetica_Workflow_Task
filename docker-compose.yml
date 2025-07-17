@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  workflow-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: workflow-engine
+    ports:
+      - "5191:5191"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5191
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5191/api/workflows || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
